@@ -1,0 +1,134 @@
+<% include template/header %>
+<!--banner-->
+<div class="banner">
+    <div class="container">
+        <section class="rw-wrapper">
+            <h1 class="rw-sentence">
+                <span>Chăm sóc &amp; Làm đẹp</span>
+                <div class="rw-words rw-words-1">
+                    <span>Hồng hào </span>
+                    <span>Mềm mại</span>
+                    <span> Căng mọng</span>
+                    <span>  Yêu kiều</span>
+                    <span>  Thiết tha</span>
+                    <span> Duyên dáng </span>
+                </div>
+                <div class="rw-words rw-words-2">
+                    <span>Tự tin khoe cá tính</span>
+                    <span>Sánh vai cùng người bạn thích</span>
+                    <span>Sắc môi tươi hồng</span>
+                    <span>Nhẹ nhàng hấp dẫn. </span>
+                    <span> Thanh lịch yêu kiều một cách tự nhiên.</span>
+                    <span>Nét đẹp người con gái Việt </span>
+                </div>
+            </h1>
+        </section>
+    </div>
+</div>
+<!--content-->
+<div class="content">
+    <div class="container">
+        <div class="content-top">
+            <div class="col-md-6 col-md">
+                <div class="col-1">
+                    <a href="sanpham" class="b-link-stroke b-animate-go  thickbox">
+                        <img src="images/pi.jpg" class="img-responsive" alt="" />
+                        <div class="b-wrapper1 long-img">
+                            <p class="b-animate b-from-right    b-delay03 "></p><label
+                                class="b-animate b-from-right    b-delay03 "></label>
+                            <h3 class="b-animate b-from-left    b-delay03 "></h3>
+                        </div>
+                    </a>
+
+
+                </div>
+                <div class="col-2">
+                    <span>Hot Deal</span>
+                    <h2><a href="sanpham"> THẤU HIỂU &amp; CHIA SẺ</a></h2>
+                    <p>NÀNG NÀO MÀ DÙNG EM NÀY SẼ KHÔNG MUỐN MUA BẤT CỨ SẢN PHẨM DƯỠNG VÀ TẨY TẾ BÀO CHẾT MÔI KHÁC LUÔN
+                    </p>
+                    <a href="sanpham" class="buy-now">Mua ngay</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-md1">
+
+                <div class="col-3">
+                    <a href="sanpham"><img src="/images/son.jpg" class="img-responsive" alt="">
+                        <div class="col-pic">
+                            <p>Son dưỡng Astrid</p>
+                            <label></label>
+                            <h5>Dành cho nam</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="sanpham"><img src="images/son2.jpg" class="img-responsive" alt="">
+                        <div class="col-pic">
+                            <p>Son dưỡng Astrid</p>
+                            <label></label>
+                            <h5>Dành cho nữ</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <!--products-->
+        <div class="content-mid">
+            <h3>Sản phẩm hot</h3>
+            <label class="line"></label>
+
+            <div class="mid-popular">
+                <% duLieuJson.sanpham.forEach(function(motsanpham){ %>
+                <div class="col-md-3 item-grid simpleCart_shelfItem">
+                    <div class=" mid-pop">
+                        <div class="pro-img">
+                            <img src="<%= motsanpham.bigImage %>" class="img-responsive"
+                                alt="<%= motsanpham.titleImage %>">
+                            <div class="zoom-icon ">
+                                <a class="picture" href="<%= motsanpham.bigImage %>" rel="<%= motsanpham.title %>"
+                                    class="b-link-stripe b-animate-go  thickbox"><i
+                                        class="glyphicon glyphicon-search icon "></i></a>
+                                <a href="/<%= motsanpham.duongDanSEO %>.<%= motsanpham.id %>"><i
+                                        class="glyphicon glyphicon-menu-right icon"></i></a>
+                            </div>
+                        </div>
+                        <div class="mid-1">
+                            <div class="women">
+                                <span><%= motsanpham.productDes %></span>
+                                <h6><a
+                                        href="/<%= motsanpham.duongDanSEO %>.<%= motsanpham.id %>"><%= motsanpham.title %></a>
+                                </h6>
+                            </div>
+                            <div class="img item_add">
+                                <a href="/<%= motsanpham.duongDanSEO %>.<%= motsanpham.id %>"><img src="images/ca.png"
+                                        alt=""></a>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="mid-2">
+                            <p><label>70K</label><em class="item_price">49K</em></p>
+                            <div class="block">
+                               
+                            </div>
+
+                            <div class="clearfix"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <% }) %>
+            </div>
+
+
+            <div class="clearfix"></div>
+
+        </div>
+
+    </div>
+    <!--//products-->
+</div>
+
+</div>
+<!--//content-->
+<% include template/footer %>

@@ -1,0 +1,231 @@
+<% include template/header %>
+<!--banner-->
+<div class="banner-top">
+	<div class="container">
+		<h1>Sản phẩm chi tiết</h1>
+		<em></em>
+		<h2><a href="/">Trang chủ</a><label>/</label>Sản phẩm chi tiết</h2>
+	</div>
+</div>
+<div class="single">
+
+	<div class="container">
+		<% duLieuJson.sanpham.forEach(function(spchitiet){ %>
+		<% if(spchitiet.id == idsanpham){ %>
+		<div class="col-md-9">
+			<div class="col-md-5 grid">
+				<div class="flexslider">
+
+					<ul class="slides">
+						<% spchitiet.productImage.forEach(function(motanh){    %>
+
+						<li data-thumb="<%= motanh.linkDes %>">
+							<div class="thumb-image"> <img src="<%= motanh.linkImg %>" data-imagezoom="true"
+									class="img-responsive"> </div>
+						</li>
+						<%  }) %>
+					</ul>
+
+
+				</div>
+			</div>
+			<div class="col-md-7 single-top-in">
+				<div class="span_2_of_a1 simpleCart_shelfItem">
+					<h3><%= spchitiet.title %></h3>
+					<p class="in-para"> Sản phẩm mang đến sự tự tin cho bờ môi quyến rũ.</p>
+					<div class="price_single">
+						<span class="reducedfrom item_price">49K</span>
+						<a href="https://www.facebook.com/lips.beauty.astrid/">Liên hệ trực tiếp với chúng tôi</a>
+						<div class="clearfix"></div>
+					</div>
+					<h4 class="quick">Sản phẩm dành cho:</h4>
+					<ul>
+						<li>Mọi loại da</li>
+						<li>Độ tuổi phù hợp từ 18 đến 60</li>
+					</ul>
+				
+					<p class="quick_desc"> </p>
+					<div class="wish-list">
+						<ul>
+							<li class="wish"><a href="#"><span class="glyphicon glyphicon-check"
+										aria-hidden="true"></span>Trao đổi trực tiếp với nhân viên tư vấn</a></li>
+							<li class="compare"><a href="#"><span class="glyphicon glyphicon-resize-horizontal"
+										aria-hidden="true"></span>Giao hàng tận nơi</a></li>
+						</ul>
+					</div>
+
+
+					<a href="https://www.facebook.com/lips.beauty.astrid/" class="add-to item_add hvr-skew-backward">Mua
+						ngay</a>
+					<div class="clearfix"> </div>
+				</div>
+
+			</div>
+			<div class="clearfix"> </div>
+			<!---->
+			<div class="tab-head">
+				<nav class="nav-sidebar">
+					<ul class="nav tabs">
+						<li class="active"><a href="#tab1" data-toggle="tab">Mô tả sản phẩm</a></li>
+						<li class=""><a href="#tab2" data-toggle="tab">Hướng dẫn sử dụng</a></li>
+						<li class=""><a href="#tab3" data-toggle="tab">Đánh giá</a></li>
+					</ul>
+				</nav>
+				<div class="tab-content one">
+					<div class="tab-pane active text-style" id="tab1">
+						<div class="facts">
+							<p>Son dưỡng mỡ hươu Astrid chính hãng (Séc)</p>
+							<p>- 4,7-4,8g màu trắng vỏ xanh tăng cường độ dưỡng & vitamin E thơm mùi chanh. </p>
+							<p> - 4,7-4,8g Hươu trắng to vỏ trắng mùi mỡ hươu truyền thống. </p>
+							<p>- 3g màu hồng/trắng (thỏi nhỏ) </p>
+							<p>
+								Son là sự kết hợp với công thức giúp đôi môi bạn không bị nứt nẻ đó chính là Vitamin.
+								Ngoài ra sản phẩm có chiết xuất Collagen, dầu Olive, cam thảo,…
+							</p>
+							<p>Đặc biệt với công thứ gấp đôi vitamin bổ sung thêm vitamin C, E, F tự nhiên để nuôi dưỡng
+								môi tốt nhất.</p>
+						</div>
+
+					</div>
+					<div class="tab-pane text-style" id="tab2">
+
+						<div class="facts">
+
+							<p>– Nếu bạn muốn dưỡng môi bình thường thì chỉ cần thoa 1 lớp phía môi dưỡng và tán đều lên
+								môi trên là được. Vì mới đánh sẽ tạo cảm giác hơi nặng môi do chất son dưỡng.</p>
+							<p>– Nếu bạn đang gặp vấn đề với đôi môi nứt nẻ thì việc đánh son dưỡng lại vô cùng qua
+								trọng. Bạn nên đánh toàn môi 1 lớp dày hơn bình thường và bạn nên tạm biết thỏi son màu
+								1 ngày để cải thiện da môi.</p>
+							<p>– Bạn hoàn toàn có thể đánh son trước làm lớp nền để đánh son màu đè lên</p>
+							<p> **Tip:
+
+								Bạn có thể thoa son khi đi ngủ để dưỡng chất trong son thấm thật sâu vào môi.
+								Bạn hoàn toàn có thể đánh son lên bất cứ lúc nào khi bạn thấy khô môi.</p>
+
+
+
+
+						</div>
+
+					</div>
+					<div class="tab-pane text-style" id="tab3">
+
+						<div class="facts">
+							<p>
+								Em son này có thiết kế nắp đậy, son được thiết kế nắp đậy chặt, phần son được đúc khá
+								nhiều.
+								Vỏ son được thiết kế bằng nhựa và thông tin chi tiết được in trên thân son.
+								Son chỉ có 1 size cho bạn lựa chọn là 4,8g thiết kế đầu son tròn không vát. </p>
+							<p>Chất son như bơ sáp màu trắng đục khi đánh lên môi cảm giác hơi dính và bóng mỡ,
+								cảm giác chất son hơi lỏng lẻo nên rất dễ gãy nếu như bạn vặn quá cao.
+								Son có mùi thơm nhẹ của chanh nên không gây quá khó chịu cho người dùng.</p>
+						</div>
+
+					</div>
+
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<!---->
+		</div>
+		<!----->
+
+		<!-- <div class="col-md-3 product-bottom product-at"> -->
+		<div class="col-md-3 product-bottom">
+			<!--categories-->
+			<div class=" rsidebar span_1_of_left">
+				<h4 class="cate">Categories</h4>
+				<ul class="menu-drop">
+					<li class="item1"><a href="#">Nam giới </a>
+					</li>
+					<li class="item2"><a href="#">Nữ giới </a>
+					</li>
+
+				</ul>
+			</div>
+			<!--initiate accordion-->
+			<script type="text/javascript">
+				$(function () {
+					var menu_ul = $('.menu-drop > li > ul'),
+						menu_a = $('.menu-drop > li > a');
+					menu_ul.hide();
+					menu_a.click(function (e) {
+						e.preventDefault();
+						if (!$(this).hasClass('active')) {
+							menu_a.removeClass('active');
+							menu_ul.filter(':visible').slideUp('normal');
+							$(this).addClass('active').next().stop(true, true).slideDown('normal');
+						} else {
+							$(this).removeClass('active');
+							$(this).next().stop(true, true).slideUp('normal');
+						}
+					});
+
+				});
+			</script>
+			<!--//menu-->
+			<section class="sky-form">
+				<h4 class="cate">Khuyến mại</h4>
+				<div class="row row1 scroll-pane">
+					<div class="col col-4">
+						<label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i></i>Upto - 30%
+							(Không giới hạn)</label>
+					</div>
+				</div>
+			</section>
+
+
+			<!---->
+			<section class="sky-form">
+				<h4 class="cate">Thể loại</h4>
+				<div class="row row1 scroll-pane">
+					<div class="col col-4">
+						<label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i></i> Son
+							dưỡng</label>
+					</div>
+
+			</section>
+			<section class="sky-form">
+				<h4 class="cate">Thương hiệu</h4>
+				<div class="row row1 scroll-pane">
+					<div class="col col-4">
+						<label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i></i>Astrid</label>
+					</div>
+
+				</div>
+			</section>
+		</div>
+		<!--initiate accordion-->
+		<script type="text/javascript">
+			$(function () {
+				var menu_ul = $('.menu-drop > li > ul'),
+					menu_a = $('.menu-drop > li > a');
+				menu_ul.hide();
+				menu_a.click(function (e) {
+					e.preventDefault();
+					if (!$(this).hasClass('active')) {
+						menu_a.removeClass('active');
+						menu_ul.filter(':visible').slideUp('normal');
+						$(this).addClass('active').next().stop(true, true).slideDown('normal');
+					} else {
+						$(this).removeClass('active');
+						$(this).next().stop(true, true).slideUp('normal');
+					}
+				});
+
+			});
+		</script>
+		<!--//menu-->
+		<% } }) %>
+
+	</div>
+	<div class="clearfix"> </div>
+</div>
+
+
+</div>
+
+<!--//content-->
+
+
+<% include template/footer %>

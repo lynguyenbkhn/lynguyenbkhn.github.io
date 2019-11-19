@@ -1,0 +1,107 @@
+{
+    "sanpham" :[
+        {
+            "id":1,
+            "title":"Son dưỡng mỡ hươu Astrid truyền thống",
+            "productDes" : "Nam giới",
+            "bigImage":"./images/sp1/si.jpg",
+            "productImage":[
+                {
+                
+                    "linkDes" : "images/si.jpg",
+                    "linkImg" : "./images/sp1/si.jpg"
+                },
+                {
+               
+                    "linkDes" : "images/si1.jpg",
+                    "linkImg" : "./images/sp1/si1.jpg"
+                },
+                {
+                    
+                    "linkDes" : "images/si2.jpg",
+                    "linkImg" : "./images/sp1/si2.jpg"
+                }
+            ],
+            "titleImage" : "son dưỡng Astrid",  
+            "duongDanSEO":"son-duong-mo-huou-Astrid-truyen-thong"
+        },
+        
+        {
+            "id":2,
+            "title":"Son dưỡng mỡ hươu mini Astrid ",
+            "productDes" : "Thỏi mini",
+            "bigImage":"./images/sp2/si.jpg",
+            "productImage":[
+                {
+                
+                    "linkDes" : "images/si.jpg",
+                    "linkImg" : "./images/sp2/si.jpg"
+                },
+                {
+               
+                    "linkDes" : "images/si1.jpg",
+                    "linkImg" : "./images/sp2/si1.jpg"
+                },
+                {
+                    
+                    "linkDes" : "images/si2.jpg",
+                    "linkImg" : "./images/sp2/si2.jpg"
+                }
+            ]
+            ,
+            "titleImage" : "son dưỡng Astrid", 
+            "duongDanSEO":"son-duong-mo-huou-Astrid-mini"
+        },
+        {
+            "id":3,
+            "title":"Son dưỡng mỡ hươu Astrid ",
+            "productDes" : "Thỏi to",
+            "bigImage":"./images/sp3/si.jpg",
+            "productImage":[
+                {
+                
+                    "linkDes" : "images/si.jpg",
+                    "linkImg" : "./images/sp3/si.jpg"
+                },
+                {
+               
+                    "linkDes" : "images/si1.jpg",
+                    "linkImg" : "./images/sp3/si1.jpg"
+                },
+                {
+                    
+                    "linkDes" : "images/si2.jpg",
+                    "linkImg" : "./images/sp3/si2.jpg"
+                }
+            ],
+            "titleImage" : "son dưỡng Astrid", 
+            "duongDanSEO":"son-duong-mo-huou-Astrid"
+        },
+        {
+            "id":4,
+            "title":"Son dưỡng mỡ hươu Astrid hương chanh ",
+            "productDes" : "Nữ giới",
+            "bigImage":"./images/sp4/si.jpg",
+            "productImage":[
+                {
+                
+                    "linkDes" : "images/si.jpg",
+                    "linkImg" : "./images/sp4/si.jpg"
+                },
+                {
+               
+                    "linkDes" : "images/si1.jpg",
+                    "linkImg" : "./images/sp4/si1.jpg"
+                },
+                {
+                    
+                    "linkDes" : "images/si2.jpg",
+                    "linkImg" : "./images/sp4/si2.jpg"
+                }
+            ],
+            "titleImage" : "son dưỡng Astrid", 
+            "duongDanSEO":"son-duong-mo-huou-Astrid-huong-chanh"
+        }
+        
+    ]
+}
